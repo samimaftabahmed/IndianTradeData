@@ -1,5 +1,6 @@
 import com.google.common.base.Objects;
 import com.google.common.collect.ComparisonChain;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
@@ -8,30 +9,30 @@ import java.io.IOException;
 
 public class CountryYearCompositeKey implements WritableComparable<CountryYearCompositeKey> {
 
-    private String country;
-    private String year;
+    private Text country = new Text();
+    private Text year = new Text();
 
     public CountryYearCompositeKey() {
     }
 
-    public CountryYearCompositeKey(String country, String year) {
-        this.country = country;
-        this.year = year;
+    public CountryYearCompositeKey(Text country, Text year) {
+        this.country.set(country);
+        this.year.set(year);
     }
 
-    public String getCountry() {
+    public Text getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(Text country) {
         this.country = country;
     }
 
-    public String getYear() {
+    public Text getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(Text year) {
         this.year = year;
     }
 
@@ -45,14 +46,16 @@ public class CountryYearCompositeKey implements WritableComparable<CountryYearCo
 
     @Override
     public void write(DataOutput out) throws IOException {
-        out.writeUTF(country);
-        out.writeUTF(year);
+
+        country.write(out);
+        year.write(out);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
-        country = in.readUTF();
-        year = in.readUTF();
+
+        country.readFields(in);
+        year.readFields(in);
     }
 
     @Override
@@ -69,5 +72,9 @@ public class CountryYearCompositeKey implements WritableComparable<CountryYearCo
         return Objects.hashCode(country, year);
     }
 
-
+    @Override
+    public String toString() {
+        return "country=" + country.toString() +
+                ", year=" + year.toString();
+    }
 }

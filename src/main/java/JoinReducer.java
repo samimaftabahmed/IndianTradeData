@@ -1,3 +1,4 @@
+import org.apache.commons.math3.util.Precision;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
@@ -31,7 +32,7 @@ public class JoinReducer extends Reducer<CountryYearCompositeKey, Text, CountryY
             }
         }
 
-        String contextValue = " import " + importValue + " export " + exportValue;
+        String contextValue = " import " + Precision.round(importValue, 2) + "\texport " + Precision.round(exportValue, 2);
         contextText.set(contextValue);
         context.write(key, contextText);
     }

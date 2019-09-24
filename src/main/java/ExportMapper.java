@@ -11,7 +11,6 @@ public class ExportMapper extends Mapper<LongWritable, Text, CountryYearComposit
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
-        Text keyText = new Text();
         Text valueText = new Text();
 
         StringTokenizer tokenizer = new StringTokenizer(value.toString(), "\n");
@@ -36,29 +35,20 @@ public class ExportMapper extends Mapper<LongWritable, Text, CountryYearComposit
                     }
                 }
 
-                String year;
-                String commodityValue;
-                String keyValue;
+                if (!nullStat) {
 
-                if (nullStat) {
-                    year = datum[4].trim();
-                    commodityValue = "0.0";
-                    keyValue = datum[3].trim();
+                    String year = datum[4 + foundPos].trim();
+                    String commodityValue = datum[2 + foundPos].trim();
+                    String keyValue = datum[3 + foundPos].trim();
 
-                } else {
-                    year = datum[4 + foundPos].trim();
-                    commodityValue = datum[2 + foundPos].trim();
-                    keyValue = datum[3 + foundPos].trim();
+                    String val = "export " + commodityValue;
+                    valueText.set(val);
+
+                    CountryYearCompositeKey compositeKey = new CountryYearCompositeKey(
+                            new Text(keyValue), new Text(year));
+
+                    context.write(compositeKey, valueText);
                 }
-
-                String val = "export " + commodityValue;
-                valueText.set(val);
-                keyText.set(keyValue);
-
-                CountryYearCompositeKey compositeKey = new CountryYearCompositeKey(
-                        keyValue, year);
-
-                context.write(compositeKey, valueText);
             }
         }
     }
