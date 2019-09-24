@@ -97,7 +97,7 @@
       <workItem from="1569239895180" duration="3562000" />
       <workItem from="1569257290544" duration="11026000" />
       <workItem from="1569269550826" duration="10000" />
-      <workItem from="1569331298137" duration="15408000" />
+      <workItem from="1569331298137" duration="15734000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1569224846290</created>
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569347276427</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="condition to ignore zero trade entities, updated readme">
+      <created>1569347644410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569347644410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

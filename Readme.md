@@ -7,9 +7,11 @@ The analysis can either be done to find out the overall trade about a particular
 
 #### Usage
 - To analyse overall data on the basis of Country and Year
--- hadoop jar IndianTradeData com.samhad.YearlyAnalysis.CYApp </export-file> <import-file> <outputDirectory>
+
+```hadoop jar IndianTradeData com.samhad.YearlyAnalysis.CYApp </export-file> <import-file> <outputDirectory>```
 
 - To analyse overall data on the basis of Commodity, Country and Year
--- hadoop jar IndianTradeData com.samhad.YearlyCommodityAnalysis.CYCApp </export-file> <import-file> <outputDirectory>
+
+```hadoop jar IndianTradeData com.samhad.YearlyCommodityAnalysis.CYCApp </export-file> <import-file> <outputDirectory>```
 
 For dataset visit: https://www.kaggle.com/lakshyaag/india-trade-data
