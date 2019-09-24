@@ -1,14 +1,16 @@
+package com.samhad.common;
+
 import org.apache.commons.math3.util.Precision;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 import java.util.Iterator;
 
-public class JoinReducer extends Reducer<CountryYearCompositeKey, Text, CountryYearCompositeKey, Text> {
+public class ReducerLogic {
 
-    @Override
-    protected void reduce(CountryYearCompositeKey key, Iterable<Text> values, Context context)
+    public void commonReducer(WritableComparable key, Iterable<Text> values, Reducer.Context context)
             throws IOException, InterruptedException {
 
         Text contextText = new Text();

@@ -6,15 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="removed country year group">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/CYApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/ExportCYMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/ImportCYMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/JoinCYReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/CYCApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/CountryYearCommodityCompositeKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/ExportCYCMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/ImportCYCMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/JoinCYCReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/AppRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/ReducerLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IndianTradeData_jar/IndianTradeData.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IndianTradeData_jar/IndianTradeData.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountryYearCompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CountryYearCompositeKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JoinReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CountryYearCompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/CountryYearCompositeKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/GenericMapLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImportMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JoinReducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReducerSideJoinRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +63,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WordCountSecondary" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityWiseAnalysis" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityWiseAnalysis" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,7 +115,7 @@
       <workItem from="1569239895180" duration="3562000" />
       <workItem from="1569257290544" duration="11026000" />
       <workItem from="1569269550826" duration="10000" />
-      <workItem from="1569331298137" duration="6696000" />
+      <workItem from="1569331298137" duration="13427000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1569224846290</created>
@@ -122,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569338914513</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="removed country year group">
+      <created>1569338957668</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569338957668</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +170,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Composite Key implementation" />
     <MESSAGE value="improved implementation of composite key, ignored 0 values commodity in reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved implementation of composite key, ignored 0 values commodity in reducer" />
+    <MESSAGE value="removed country year group" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed country year group" />
   </component>
 </project>
