@@ -2,8 +2,7 @@
 
 Map Reduce Program to analyse trade statistics of India for export and import of commodities.
 
-The analysis can either be done on overall trade based on commodity in a particular year with a country, or just on a particular year with a country
-
+The analysis can either be done to find out the overall trade about a particular commodity in a particular year with a country, or just to find out the trade on a particular year with a country.
 
 
 #### Usage

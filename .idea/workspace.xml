@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/IndianTradeData_jar/IndianTradeData.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IndianTradeData_jar/IndianTradeData.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/samhad/common/ReducerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/ReducerLogic.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +97,7 @@
       <workItem from="1569239895180" duration="3562000" />
       <workItem from="1569257290544" duration="11026000" />
       <workItem from="1569269550826" duration="10000" />
-      <workItem from="1569331298137" duration="15006000" />
+      <workItem from="1569331298137" duration="15408000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1569224846290</created>
@@ -137,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569346025377</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="condition to ignore zero trade entities, updated readme">
+      <created>1569347276427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569347276427</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +168,7 @@
     <MESSAGE value="improved implementation of composite key, ignored 0 values commodity in reducer" />
     <MESSAGE value="removed country year group" />
     <MESSAGE value="Implemented CountryYearCommodity Composite Key, prevented code repeat with multiple common classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented CountryYearCommodity Composite Key, prevented code repeat with multiple common classes" />
+    <MESSAGE value="condition to ignore zero trade entities, updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="condition to ignore zero trade entities, updated readme" />
   </component>
 </project>
