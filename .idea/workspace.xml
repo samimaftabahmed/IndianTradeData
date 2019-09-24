@@ -6,26 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="removed country year group">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/CYApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/ExportCYMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/ImportCYMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/JoinCYReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/CYCApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/CountryYearCommodityCompositeKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/ExportCYCMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/ImportCYCMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyCommodityAnalysis/JoinCYCReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/AppRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/ReducerLogic.java" afterDir="false" />
+    <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/IndianTradeData_jar/IndianTradeData.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/IndianTradeData_jar/IndianTradeData.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CountryYearCompositeKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/YearlyAnalysis/CountryYearCompositeKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/GenericMapLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImportMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinReducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReducerSideJoinRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samhad/common/ReducerLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/common/ReducerLogic.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +100,7 @@
       <workItem from="1569239895180" duration="3562000" />
       <workItem from="1569257290544" duration="11026000" />
       <workItem from="1569269550826" duration="10000" />
-      <workItem from="1569331298137" duration="13427000" />
+      <workItem from="1569331298137" duration="15006000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1569224846290</created>
@@ -145,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569338957668</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented CountryYearCommodity Composite Key, prevented code repeat with multiple common classes">
+      <created>1569346025377</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569346025377</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +163,7 @@
     <MESSAGE value="Composite Key implementation" />
     <MESSAGE value="improved implementation of composite key, ignored 0 values commodity in reducer" />
     <MESSAGE value="removed country year group" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed country year group" />
+    <MESSAGE value="Implemented CountryYearCommodity Composite Key, prevented code repeat with multiple common classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented CountryYearCommodity Composite Key, prevented code repeat with multiple common classes" />
   </component>
 </project>

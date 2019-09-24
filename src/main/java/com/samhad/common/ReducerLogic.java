@@ -34,8 +34,11 @@ public class ReducerLogic {
             }
         }
 
-        String contextValue = " import " + Precision.round(importValue, 2) + "\texport " + Precision.round(exportValue, 2);
-        contextText.set(contextValue);
-        context.write(key, contextText);
+        if (importValue != 0.0 || exportValue != 0.0) {
+
+            String contextValue = " import " + Precision.round(importValue, 2) + "\texport " + Precision.round(exportValue, 2);
+            contextText.set(contextValue);
+            context.write(key, contextText);
+        }
     }
 }
