@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="IndianTradeData:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="" />
+    <list default="true" id="996fd38e-de6c-4247-a983-617aec2fa1e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/IndianTradeData_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CountryYearCompositeKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CountryYearGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ImportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JoinReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/kiba.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndianTradeData.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReducerSideJoinRunner.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +48,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1REEyYRSomxeja7NXMPDum0V6Mk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WordCountSecondary" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
@@ -47,6 +72,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="kiba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kiba" />
+      <module name="IndianTradeData" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.kiba" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -57,11 +96,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569224109378</updated>
-      <workItem from="1569224110682" duration="591000" />
+      <workItem from="1569224110682" duration="1555000" />
+      <workItem from="1569239895180" duration="3562000" />
+      <workItem from="1569257290544" duration="11026000" />
+      <workItem from="1569269550826" duration="10000" />
+      <workItem from="1569331298137" duration="2788000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1569224846290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569224846290</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>

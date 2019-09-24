@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IndianTradeData:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IndianTradeData_jar</output-path>
+    <root id="archive" name="IndianTradeData.jar">
+      <element id="module-output" name="IndianTradeData" />
+    </root>
+  </artifact>
+</component>
