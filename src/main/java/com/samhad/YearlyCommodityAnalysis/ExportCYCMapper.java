@@ -13,7 +13,7 @@ public class ExportCYCMapper extends Mapper<LongWritable, Text, CountryYearCommo
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
         GenericMapLogic genericImportMapLogic = new GenericMapLogic();
-        genericImportMapLogic.exportMap(value, context, true);
+        genericImportMapLogic.map(value, context, true,false);
     }
 }
 
