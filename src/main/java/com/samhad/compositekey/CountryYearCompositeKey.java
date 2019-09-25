@@ -1,4 +1,4 @@
-package com.samhad.YearlyCommodityAnalysis;
+package com.samhad.compositekey;
 
 import com.google.common.base.Objects;
 import com.google.common.collect.ComparisonChain;
@@ -9,19 +9,17 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class CountryYearCommodityCompositeKey implements WritableComparable<CountryYearCommodityCompositeKey> {
+public class CountryYearCompositeKey implements WritableComparable<CountryYearCompositeKey> {
 
     private Text country = new Text();
     private Text year = new Text();
-    private Text commodity = new Text();
 
-    public CountryYearCommodityCompositeKey() {
+    public CountryYearCompositeKey() {
     }
 
-    public CountryYearCommodityCompositeKey(Text country, Text year, Text commodity) {
+    public CountryYearCompositeKey(Text country, Text year) {
         this.country.set(country);
         this.year.set(year);
-        this.commodity.set(commodity);
     }
 
     public Text getCountry() {
@@ -29,7 +27,7 @@ public class CountryYearCommodityCompositeKey implements WritableComparable<Coun
     }
 
     public void setCountry(Text country) {
-        this.country.set(country);
+        this.country = country;
     }
 
     public Text getYear() {
@@ -37,59 +35,48 @@ public class CountryYearCommodityCompositeKey implements WritableComparable<Coun
     }
 
     public void setYear(Text year) {
-        this.year.set(year);
-    }
-
-    public Text getCommodity() {
-        return commodity;
-    }
-
-    public void setCommodity(Text commodity) {
-        this.commodity.set(commodity);
+        this.year = year;
     }
 
     @Override
-    public int compareTo(CountryYearCommodityCompositeKey countryYearCommodityCompositeKey) {
+    public int compareTo(CountryYearCompositeKey countryYearCompositeKey) {
         return ComparisonChain.start()
-                .compare(country, countryYearCommodityCompositeKey.country)
-                .compare(year, countryYearCommodityCompositeKey.year)
-                .compare(commodity, countryYearCommodityCompositeKey.year)
+                .compare(country, countryYearCompositeKey.country)
+                .compare(year, countryYearCompositeKey.year)
                 .result();
     }
 
     @Override
     public void write(DataOutput out) throws IOException {
+
         country.write(out);
         year.write(out);
-        commodity.write(out);
     }
 
     @Override
     public void readFields(DataInput in) throws IOException {
+
         country.readFields(in);
         year.readFields(in);
-        commodity.readFields(in);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CountryYearCommodityCompositeKey that = (CountryYearCommodityCompositeKey) o;
+        CountryYearCompositeKey that = (CountryYearCompositeKey) o;
         return Objects.equal(country, that.country) &&
-                Objects.equal(year, that.year) &&
-                Objects.equal(commodity, that.commodity);
+                Objects.equal(year, that.year);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(country, year, commodity);
+        return Objects.hashCode(country, year);
     }
 
     @Override
     public String toString() {
         return "country=" + country.toString() +
-                ", year=" + year.toString() +
-                ", commodity=" + commodity.toString();
+                ", year=" + year.toString();
     }
 }

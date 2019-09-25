@@ -27,7 +27,7 @@ public class AppRunner {
         String[] otherArgs = new GenericOptionsParser(configuration, args).getRemainingArgs();
 
         if (otherArgs.length != 3) {
-            System.err.println("Usage: hadoop jar IndianTradeData.jar <com.samhad.YearlyAnalysis.CYApp/com.samhad.YearlyCommodityAnalysis.CYCApp> </import-data> </export-data> </output-path>");
+            System.err.println("Usage: hadoop jar IndianTradeData.jar <com.samhad.app.CYApp/com.samhad.app.CYCApp> </import-data> </export-data> </output-path>");
             return 2;
         }
 

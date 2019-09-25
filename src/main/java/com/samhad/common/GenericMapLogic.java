@@ -1,7 +1,7 @@
 package com.samhad.common;
 
-import com.samhad.YearlyAnalysis.CountryYearCompositeKey;
-import com.samhad.YearlyCommodityAnalysis.CountryYearCommodityCompositeKey;
+import com.samhad.compositekey.CountryYearCompositeKey;
+import com.samhad.compositekey.CountryYearCommodityCompositeKey;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 

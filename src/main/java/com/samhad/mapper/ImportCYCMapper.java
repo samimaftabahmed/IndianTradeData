@@ -1,6 +1,7 @@
-package com.samhad.YearlyCommodityAnalysis;
+package com.samhad.mapper;
 
 import com.samhad.common.GenericMapLogic;
+import com.samhad.compositekey.CountryYearCommodityCompositeKey;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
