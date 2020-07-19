@@ -43,14 +43,8 @@ public class GenericMapLogic {
                     String commodityValue = datum[2 + foundPos].trim();
                     String keyValue = datum[3 + foundPos].trim();
 
-                    if (isImport) {
-                        String val = "import " + commodityValue;
-                        valueText.set(val);
-
-                    } else {
-                        String val = "export " + commodityValue;
-                        valueText.set(val);
-                    }
+                    String val = isImport ? "import" : "export";
+                    valueText.set(val + commodityValue);
 
                     if (CYCLogic) {
                         CountryYearCommodityCompositeKey compositeKey = new CountryYearCommodityCompositeKey(
